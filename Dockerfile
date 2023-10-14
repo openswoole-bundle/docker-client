@@ -6,7 +6,7 @@ ARG DOCKER_COMPOSE_VERSION="1.29.2"
 
 FROM docker:${DOCKER_VERSION} as client
 
-RUN apk add --update jq bash curl git openssh-client pass dirmngr gpg-agent && \
+RUN apk add --update jq bash curl git openssh-client pass dirmngr gpg-agent gpgv && \
     apk upgrade && \
     rm -rf /var/cache/apk/*
 
