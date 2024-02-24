@@ -35,4 +35,5 @@ COPY scripts/docker-use-buildx.sh /usr/local/bin/docker-use-buildx
 COPY scripts/docker-use-pass.sh /usr/local/bin/docker-use-pass
 
 # setup gpg and initialize pass
-RUN sh /usr/local/bin/docker-use-pass
+# commented out because it creates a lock file
+#RUN sh /usr/local/bin/docker-use-pass
